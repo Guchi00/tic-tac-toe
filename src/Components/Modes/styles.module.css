@@ -1,0 +1,22 @@
+.container {
+  width: 100px;
+}
+
+.mode {
+  margin-right: 10px;
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

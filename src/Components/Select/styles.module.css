@@ -1,0 +1,12 @@
+.container {
+  border: solid 1px;
+  height: 40px;
+}
+
+.select {
+  outline: none;
+  height: 40px;
+}
+
+/* background-color: rgb(1, 127, 254);
+  border: solid 1px rgb(1, 127, 254); */

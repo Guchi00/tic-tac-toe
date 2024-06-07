@@ -1,0 +1,56 @@
+/* Custom Default */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Copy custom default to where I want (body & container) */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100vh;
+  width: 100%;
+}
+
+.tile {
+  width: 200px;
+  height: 150px;
+  border: 4px solid var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.tile.top {
+  border-top: none;
+}
+
+.tile.left {
+  border-left: none;
+}
+
+.tile.right {
+  border-right: none;
+}
+
+.tile.bottom {
+  border-bottom: none;
+}
+
+/* Overwright the custom with dark mode when a click happen*/
+.dark_mode {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+.light_mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
