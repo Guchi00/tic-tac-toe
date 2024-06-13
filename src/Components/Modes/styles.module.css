@@ -26,3 +26,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+/* @media only screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+} */
