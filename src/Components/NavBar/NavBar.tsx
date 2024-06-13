@@ -8,7 +8,7 @@ export interface INewNavBarProps {
   onToggleMode: () => void;
   onToggleLightMode: () => void;
   currentPlayer: "X" | "O";
-  gameStart: Boolean;
+  gameStart: boolean;
   winCount: { X: number; O: number };
 }
 export const NavBar = (props: INewNavBarProps) => {

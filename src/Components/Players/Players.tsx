@@ -10,13 +10,13 @@ export const Players = (props: INewPlayerProps) => {
   return (
     <div className={styles.container}>
       <div className={styles.player}>
-        <h1 className={styles.players}>X</h1>
-        <h2>{winCount.X}</h2>
+        <h3 className={styles.players}>X</h3>
+        <h3>{winCount.X}</h3>
       </div>
 
       <div className={styles.player}>
-        <h1 className={styles.players}>O</h1>
-        <h2>{winCount.O}</h2>
+        <h3 className={styles.players}>O</h3>
+        <h3>{winCount.O}</h3>
       </div>
     </div>
   );

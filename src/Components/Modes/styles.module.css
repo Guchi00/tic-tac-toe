@@ -1,9 +1,15 @@
 .container {
-  width: 100px;
+  width: 120px;
 }
 
 .mode {
-  margin-right: 10px;
+  /* margin-right: 20px; */
+  font-size: 20px !important;
+}
+
+.btn {
+  margin-right: 20px;
+  color: pointer;
 }
 
 :root {

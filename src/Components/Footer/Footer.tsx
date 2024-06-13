@@ -6,7 +6,7 @@ interface INewFooterProps {
   setBoard: React.Dispatch<React.SetStateAction<Tile[][]>>;
   initialBoard: Tile[][];
   setWinCounts: React.Dispatch<React.SetStateAction<{ X: number; O: number }>>;
-  setIsGameOver: React.Dispatch<React.SetStateAction<Boolean>>;
+  setIsGameOver: React.Dispatch<React.SetStateAction<boolean>>;
   handleRestartGame: () => void;
 }
 export const Footer = (props: INewFooterProps) => {
@@ -35,7 +35,9 @@ export const Footer = (props: INewFooterProps) => {
           Refresh
         </button>
       </div>
-      <span>Game prepared by Ugochi Iwuchukwu</span>
+      <span className={styles.signature}>
+        Prepared by Ugochi Iwuchukwu &#9829;
+      </span>
     </div>
   );
 };

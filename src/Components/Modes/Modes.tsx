@@ -12,12 +12,12 @@ export const Modes = (props: INewModeProps) => {
 
   return (
     <div className={styles.container}>
-      <button className={styles.mode} onClick={onToggleMode}>
-        <DarkModeIcon />
+      <button className={styles.btn} onClick={onToggleMode}>
+        <DarkModeIcon className={styles.mode} />
       </button>
 
-      <button onClick={onLightMode}>
-        <LightModeIcon />
+      <button onClick={onLightMode} className={styles.btn}>
+        <LightModeIcon className={styles.mode} />
       </button>
     </div>
   );

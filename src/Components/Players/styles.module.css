@@ -1,5 +1,4 @@
 .container {
-  /* border: solid 1px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -9,15 +8,30 @@
 
 .player {
   height: 40px;
-  width: 220px;
+  width: 150px;
   border: solid 1px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* margin-left: 10px; */
 }
 
 .players {
   color: rgb(1, 127, 254) !important;
-  /* background-color: rgb(1, 127, 254); */
+}
+
+@media only screen and (max-width: 768px) {
+  .player {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 70%;
+    height: 50px;
+  }
+
+  .player {
+    width: 100px;
+  }
 }

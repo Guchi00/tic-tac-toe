@@ -1,52 +1,70 @@
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90px;
+  width: 100%;
+}
+
 .container {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
-  height: 75px;
   width: 100%;
   border: solid 1px grey;
-  margin-top: 30px;
   border-bottom: none;
   border-left: none;
   border-right: none;
 }
 
 .action {
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 110px;
   margin-top: 10px;
   border-radius: 2px;
   background-color: rgb(1, 127, 254);
   border: solid 1px rgb(1, 127, 254);
   color: white;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  /* font-weight: 800; */
   margin-right: 10px;
 }
 
 .refresh_action {
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 110px;
   margin-top: 10px;
   border-radius: 2px;
-  background-color: rgb(181, 3, 13);
-  border: solid 1px rgb(181, 3, 13);
+  background-color: rgb(255, 2, 0);
+  border: solid 1px rgb(255, 2, 0);
   color: white;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 14px;
+  /* font-weight: 800; */
   margin-left: 10px;
 }
 
-.parent {
-  display: flex;
-  /* border: solid 1px; */
-  flex-direction: column;
-  /* height: 90px; */
-  /* width: 100%; */
-}
-
-span {
-  font-size: 12px;
+.signature {
+  font-size: 10px;
   text-align: right;
   margin-right: 20px;
+  color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .signature {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin-top: 50px;
+  }
+
+  .signature {
+    margin-top: 20px;
+  }
 }

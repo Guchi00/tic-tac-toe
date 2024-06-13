@@ -24,8 +24,8 @@ interface BodyProps {
   board: Tile[][];
   setBoard: React.Dispatch<React.SetStateAction<Tile[][]>>;
   initialBoard: Tile[][];
-  isGameOver: Boolean;
-  setIsGameOver: React.Dispatch<React.SetStateAction<Boolean>>;
+  isGameOver: boolean;
+  setIsGameOver: React.Dispatch<React.SetStateAction<boolean>>;
   winner: "X" | "O" | null;
 }
 
@@ -142,6 +142,7 @@ export const Body = (props: BodyProps) => {
                   key={colIndex}
                   className={getTileClasses(rowIndex, colIndex)}
                   onClick={() => handleTileClick(rowIndex, colIndex)}
+                  id={styles.col}
                 >
                   {tile.value}
                 </div>
