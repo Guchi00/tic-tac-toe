@@ -32,6 +32,9 @@ span {
   }
   .contents {
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    /* border: solid 1px; */
+    /* width: 60%; */
+    height: 70px;
   }
 }

@@ -28,11 +28,12 @@ export const Footer = (props: INewFooterProps) => {
   return (
     <div className={styles.parent}>
       <div className={styles.container}>
-        <button className={styles.action} onClick={handleRestartGame}>
-          Restart Game
-        </button>
         <button className={styles.refresh_action} onClick={handleRefreshPage}>
           Refresh
+        </button>
+
+        <button className={styles.action} onClick={handleRestartGame}>
+          Restart
         </button>
       </div>
       <span className={styles.signature}>
