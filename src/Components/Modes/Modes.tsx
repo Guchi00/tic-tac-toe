@@ -16,7 +16,7 @@ export const Modes = (props: INewModeProps) => {
         <DarkModeIcon className={styles.mode} />
       </button>
 
-      <button onClick={onLightMode} className={styles.btn}>
+      <button onClick={onLightMode} className={styles.btn_light}>
         <LightModeIcon className={styles.mode} />
       </button>
     </div>

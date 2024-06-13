@@ -8,7 +8,11 @@
 }
 
 .btn {
-  margin-right: 20px;
+  margin-right: 10px;
+  color: pointer;
+}
+.btn_light {
+  margin-left: 10px;
   color: pointer;
 }
 
@@ -27,9 +31,11 @@ body {
   color: var(--text-color);
 }
 
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .container {
+    height: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-direction: row;
   }
-} */
+}
